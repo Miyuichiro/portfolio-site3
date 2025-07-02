@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trattoria Sole</title>
+  <link rel="stylesheet" href="res.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="container">
+      <h1><a href="#">Trattoria Sole</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">コンセプト</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#gallery">ギャラリー</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="main-visual">
+    <h2>本場の味とくつろぎを、あなたに。</h2>
+  </section>
+
+  <!-- コンセプト -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>こだわりの味と空間</h2>
+      <p>
+        Trattoria Soleでは、新鮮な素材とイタリア直輸入の食材を使った、本格イタリアンを提供しています。温かみのある空間で、贅沢なひとときをお楽しみください。
+      </p>
+    </div>
+  </section>
+
+  <!-- メニュー -->
+  <section id="menu" class="section">
+    <div class="container">
+      <h2>メニュー</h2>
+      <div class="tabs">
+        <button class="tab-button active" data-category="antipasto">前菜</button>
+        <button class="tab-button" data-category="pasta">パスタ</button>
+        <button class="tab-button" data-category="drink">ドリンク</button>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item antipasto">
+          <img src="前菜盛り合わせ　イタリアン　フレンチ.jpg" alt="前菜">
+          <p>季節の前菜盛り合わせ - ¥980</p>
+        </div>
+        <div class="menu-item pasta" style="display:none;">
+          <img src="ボロネーゼ.jpg" alt="パスタ">
+          <p>濃厚ボロネーゼ - ¥1,280</p>
+        </div>
+        <div class="menu-item drink" style="display:none;">
+          <img src="赤ワイン.jpg" alt="ドリンク">
+          <p>ソムリエ厳選 赤ワイン - ¥750</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ギャラリー -->
+  <section id="gallery" class="section fade-in">
+    <div class="container">
+      <h2>ギャラリー</h2>
+      <div class="gallery-grid">
+        <img src="インボルティー二.jpg" alt="料理1" class="gallery-img">
+        <img src="クロスティー二.jpg" alt="料理2" class="gallery-img">
+        <img src="内装.jpg" alt="店内" class="gallery-img">
+        <img src="赤ワイン.jpg" alt="ワイン" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section id="access" class="section">
+    <div class="container">
+      <h2>アクセス</h2>
+      <p>〒123-4567 東京都渋谷区南イタリア通り3-4-5</p>
+      <p>営業時間：11:30〜22:00（火曜定休）</p>
+      <p>ご予約・お問い合わせ：03-1234-5678</p>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 Trattoria Sole</p>
+  </footer>
+
+  <!-- モーダル表示用 -->
+  <div id="modal" class="modal hidden">
+    <span id="modal-close">&times;</span>
+    <img id="modal-img" src="" alt="拡大画像">
+  </div>
+
+  <script src="res.js"></script>
+</body>
+</html>
